@@ -4,16 +4,16 @@
 
 # Site
 title: Wang Xin's Blog
-subtitle: 留下一点回忆
-description: 
+subtitle: 王鑫的博客
+description: Imagination will take you everywhere.
 author: Wang Xin
-avataor: 
+avatar: http://portrait1.sinaimg.cn/2345835112/blog/180
 language: zh-Hans 
 timezone: Asia/Shanghai
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://wx9106.github.io
+url: http://ionething.github.io
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
@@ -70,5 +70,5 @@ theme: next
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: git
-  repo: https://github.com/wx9106/wx9106.github.io
+  repo: https://github.com/ionething/ionething.github.io
   branch: master

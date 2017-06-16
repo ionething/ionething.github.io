@@ -148,9 +148,11 @@ font:
   #LinkLabel: Link
 social:
   GitHub: https://github.com/wx9106
-  Weibo: http://weibo.com/ionething
-  博客园:
-  CSDN:  
+  Mail: mailto:wangxin2617@163.com
+  新浪微博: http://weibo.com/ionething
+  新浪博客: http://blog.sina.com.cn/u/2345835112
+  博客园: http://www.cnblogs.com/xdwy
+  简书: http://www.jianshu.com/users/910c19cbfe9d
 
 # Social Links Icons
 # Icon Mapping:
@@ -164,7 +166,11 @@ social_icons:
   # http://fontawesome.dashgame.com/
   GitHub: github
   Twitter: twitter
-  Weibo: weibo
+  新浪微博: weibo
+  新浪博客: weibo
+  博客园: pencil-square-o
+  简书: book
+  Mail: envelope
 
 # Sidebar Avatar
 # in theme directory(source/images): /images/avatar.jpg
