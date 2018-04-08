@@ -1,0 +1,881 @@
+<!doctype html>
+
+
+
+  
+
+
+<html class="theme-next pisces use-motion" lang="zh-Hans">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.1" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="支付,总结," />
+
+
+
+
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.1.1" />
+
+
+
+
+
+
+<meta name="description" content="银联卡代收业务是银联支付产品的一个重要组成部分，因为其方便快捷适用场景广而受到广大企业钟爱。而银联的代收业务其有一定的复杂度和业务性，导致很多刚使用此项业务的人员对其概念模糊。所以，对银联卡代收业务做一个总结是十分必要的。但本人非支付专业，总结难免疏漏或者偏颇。以下仅供参考。  概述支付场景支付业务主要分为借记支付、贷记支付和辅助环节等支付类型。在会计学中，借记为账户增加，贷记为账户减少。所以，">
+<meta name="keywords" content="支付,总结">
+<meta property="og:type" content="article">
+<meta property="og:title" content="【知识总结】银联卡代收业务知识总结">
+<meta property="og:url" content="http://ionething.github.io/2017/06/29/【知识总结】银联卡代收业务知识总结/index.html">
+<meta property="og:site_name" content="Wang Xin&#39;s Blog">
+<meta property="og:description" content="银联卡代收业务是银联支付产品的一个重要组成部分，因为其方便快捷适用场景广而受到广大企业钟爱。而银联的代收业务其有一定的复杂度和业务性，导致很多刚使用此项业务的人员对其概念模糊。所以，对银联卡代收业务做一个总结是十分必要的。但本人非支付专业，总结难免疏漏或者偏颇。以下仅供参考。  概述支付场景支付业务主要分为借记支付、贷记支付和辅助环节等支付类型。在会计学中，借记为账户增加，贷记为账户减少。所以，">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2018-04-08T14:47:29.759Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="【知识总结】银联卡代收业务知识总结">
+<meta name="twitter:description" content="银联卡代收业务是银联支付产品的一个重要组成部分，因为其方便快捷适用场景广而受到广大企业钟爱。而银联的代收业务其有一定的复杂度和业务性，导致很多刚使用此项业务的人员对其概念模糊。所以，对银联卡代收业务做一个总结是十分必要的。但本人非支付专业，总结难免疏漏或者偏颇。以下仅供参考。  概述支付场景支付业务主要分为借记支付、贷记支付和辅助环节等支付类型。在会计学中，借记为账户增加，贷记为账户减少。所以，">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Pisces',
+    sidebar: {"position":"left","display":"post","offset":12,"offset_float":0,"b2t":false,"scrollpercent":false},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://ionething.github.io/2017/06/29/【知识总结】银联卡代收业务知识总结/"/>
+
+
+
+
+
+  <title>【知识总结】银联卡代收业务知识总结 | Wang Xin's Blog</title>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  <div style="display: none;">
+    <script src="//s95.cnzz.com/z_stat.php?id=1262526167&web_id=1262526167" language="JavaScript"></script>
+  </div>
+
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Wang Xin's Blog</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle">王鑫的博客</p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
+            关于
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://ionething.github.io/2017/06/29/【知识总结】银联卡代收业务知识总结/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Wang Xin">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="http://portrait1.sinaimg.cn/2345835112/blog/180">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Wang Xin's Blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">【知识总结】银联卡代收业务知识总结</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-06-29T18:52:39+08:00">
+                2017-06-29
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/业务/" itemprop="url" rel="index">
+                    <span itemprop="name">业务</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <blockquote>
+<p>银联卡代收业务是银联支付产品的一个重要组成部分，因为其方便快捷适用场景广而受到广大企业钟爱。而银联的代收业务其有一定的复杂度和业务性，导致很多刚使用此项业务的人员对其概念模糊。所以，对银联卡代收业务做一个总结是十分必要的。但本人非支付专业，总结难免疏漏或者偏颇。以下仅供参考。</p>
+</blockquote>
+<h1 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h1><h2 id="支付场景"><a href="#支付场景" class="headerlink" title="支付场景"></a>支付场景</h2><p>支付业务主要分为借记支付、贷记支付和辅助环节等支付类型。在会计学中，借记为账户增加，贷记为账户减少。所以，借记支付就是使账户增加的各项支付业务，包括持卡人进行自助消费、订购和对银联卡代收，贷记支付就是使账户减少的各项支付业务，包括对银联卡代付、现金支付和转账支付等。而辅助环节则是对支付业务的补充与辅助，包括余额查询、业务委托和账户验证。</p>
+<p>由于支付渗透到生活的方方面面，支付场景也非常十分繁杂。如果以线上和线下来划分，各支付场景的终端、卡片、持卡人、交互和资金都各有不同。线下终端就有POS机、ATM机等，工作人员或者持卡人进行操作，主要读取卡片上的磁条或者IC，也可以非接触读取或者直接手工输入。而线上支付主要是商户的终端软件，一般是手工输入卡号，通过多种身份识别如密码和辅助验证机制，来进行支付交易。卡片有磁条预付卡（记名卡）、IC电子现金、IC借贷记卡等等，而身份识别有签名、密码、指纹、数字证书和其他辅助验证等方式。</p>
+<h2 id="代收业务概述"><a href="#代收业务概述" class="headerlink" title="代收业务概述"></a>代收业务概述</h2><p>代收业务是持卡人与商户签订业务委托协议，许可商户根据协议约定，向持卡人指定账户请求并完成指定款项支付的业务。简单说来，代收就是支付机构（如银联）替代商户平台（某某网或者APP）向某个账户（对私或者对公，卡或者存折）收取款项的业务。这种业务持卡人与商户是非面对面状态，通过商户终端操作，由系统或者手工输入信息，通过密码、签名和其他辅助验证方式进行身份识别。</p>
+<p>代收业务规则中主要有一下关键的问题：</p>
+<ol>
+<li>建立完整的业务风控管理服务体系</li>
+<li>有效的业务委托的基本条件</li>
+<li>商户依据委托协议非面对面发起交易</li>
+<li>交易验证要素简化，收单机构承担交易真实性的检查责任</li>
+</ol>
+<h2 id="代收业务流程"><a href="#代收业务流程" class="headerlink" title="代收业务流程"></a>代收业务流程</h2><p>代收业务整个流程主要分两部分，代收业务委托和代收交易。</p>
+<ul>
+<li>代收业务委托</li>
+</ul>
+<p>代收业务委托是持卡人和代收商户进行业务委托，也就是同意商户进行账户的代收交易。</p>
+<ul>
+<li>代收交易</li>
+</ul>
+<p>代收交易是代收商户发起代收交易（一般称为制单），然后将交易报文或者交易文件（就是交易单）上发到收单机构，收单机构再将交易上发到银联，银联再通过发卡机构进行扣款，发卡机构进行扣款并将结果返回给银联，银联再返回给收单机构，收单机构返回给商户。</p>
+<h1 id="基本要求"><a href="#基本要求" class="headerlink" title="基本要求"></a>基本要求</h1><h2 id="发卡机构"><a href="#发卡机构" class="headerlink" title="发卡机构"></a>发卡机构</h2><h3 id="持卡人服务"><a href="#持卡人服务" class="headerlink" title="持卡人服务"></a>持卡人服务</h3><p>业务公告，明示代收业务相关信息；查询，发卡系统内的信息记录、银联提供的查询页面；投诉。</p>
+<h3 id="业务委托管理"><a href="#业务委托管理" class="headerlink" title="业务委托管理"></a>业务委托管理</h3><p>选择支持；可根据其要求，终止相应的代收业务，对相关商户上送的代收交易予以拒绝，并告知持卡人，因此产生的业务纠纷由其自行负责。</p>
+<h3 id="账户验证"><a href="#账户验证" class="headerlink" title="账户验证"></a>账户验证</h3><p>信息匹配性检查；账户验证交易；代收交易中一并上送的辅助认证信息。</p>
+<h3 id="交易识别和应答"><a href="#交易识别和应答" class="headerlink" title="交易识别和应答"></a>交易识别和应答</h3><p>建立或者解除委托交易：按规则处理交易信息。<br>账户验证交易：验证辅助认证信息匹配性。<br>代收交易：检查账户状态、账户余额或信用额度是否满足支付条件；检查交易与委托关系的一致性；验证辅助认证信息匹配性。<br>对实时代收交易，联机返回应答；批量代收交易，返回批量处理结果。</p>
+<h3 id="交易性质"><a href="#交易性质" class="headerlink" title="交易性质"></a>交易性质</h3><p>对贷记卡在证券公司、金融机构、贷款还款等商户用于金融理财或者借贷还款的代收交易，可按照预借现金业务进行账务处理。</p>
+<h2 id="收单机构"><a href="#收单机构" class="headerlink" title="收单机构"></a>收单机构</h2><h3 id="终端管理"><a href="#终端管理" class="headerlink" title="终端管理"></a>终端管理</h3><p>终端管理需在商户交易终端极其相关受理系统，并且要符合技术要求。</p>
+<h3 id="代收业务委托管理"><a href="#代收业务委托管理" class="headerlink" title="代收业务委托管理"></a>代收业务委托管理</h3><p>要求商户在受理代收业务委托时，与业务委托申请人签订业务委托协议，并负责对业务委托申请人身份及支付卡片进行校核。</p>
+<h3 id="代收业务委托形式"><a href="#代收业务委托形式" class="headerlink" title="代收业务委托形式"></a>代收业务委托形式</h3><h4 id="形式一"><a href="#形式一" class="headerlink" title="形式一"></a>形式一</h4><p>这种形式的代收业务委托是签订代收业务委托协议，并通过校验持卡人身份和校验支付卡片建立委托交易。不支持持卡人对委托本身进行否认。这种形式比较常见的情况就是商户引导用户进行绑卡操作，绑卡时候通过相关信息，也就是通过校验持卡人身份和校验支付卡片，从持卡人的银行卡中扣除0.01元后建立了委托交易，通过这种形式来进行代收业务的委托。</p>
+<p>委托代收协议是商户发起代收交易的依据，只有通过有效的代收业务委托才能代收。对于通过委托交易（比如扣0.01元）建立的代收业务委托，持卡人不能否认代收业务委托协议或者否认参与代收业务委托。</p>
+<h4 id="形式二"><a href="#形式二" class="headerlink" title="形式二"></a>形式二</h4><p>这种形式的代收业务委托是签订代收业务委托协议，并通过验证账户信息与持卡人身份信息的匹配性来进行账户验证。商户应帮助收单机构开展持卡人身份识别，未进行此项审核义务的商户，即使签订了业务委托协议发起了代收交易的，持卡人若否认代收业务委托协议或者否认参与过代收业务委托，则收单机构应要求商户承担相应损失的责任。</p>
+<h3 id="收单机构的交易要求"><a href="#收单机构的交易要求" class="headerlink" title="收单机构的交易要求"></a>收单机构的交易要求</h3><p>实时代收都通过联机报文进行交易，批量代收通过批量文件进行交易，并且批量文件需在规定时间内上送银联批量文件。</p>
+<ol>
+<li>进行委托关系检查</li>
+<li>交易凭证，包括业务委托凭证、解除委托凭证、代收交易凭证、商品或服务交付凭证。 交易凭证需保管一年，是后续处理差错的依据。</li>
+<li>退货处理</li>
+<li>信息安全</li>
+<li>商户管理：MCC范围、保证金</li>
+</ol>
+<h2 id="风险管理"><a href="#风险管理" class="headerlink" title="风险管理"></a>风险管理</h2><ol>
+<li>发卡机构设置交易监控指标（如大于5万的代收需监控是否有异常交易），建立持卡人通知机制（短信通知等）。</li>
+<li>收单机构设置交易监控指标，商户业务暂停完成整改后可重新申请恢复开通，而商户强制退出的2年内不得申请开通。</li>
+<li>银联动态跟踪，指导机构进行风险防控，生成可疑商户名单和风险商户名单。</li>
+</ol>
+<h1 id="交易处理"><a href="#交易处理" class="headerlink" title="交易处理"></a>交易处理</h1><h2 id="实时代收交易"><a href="#实时代收交易" class="headerlink" title="实时代收交易"></a>实时代收交易</h2><p>商户选择选择交易类型、输入信息要素和辅助验证信息发起交易，收单机构检查委托关系后上送银联交易。银联经检查后，转发到发卡机构，发卡机构进行授权应答。</p>
+<h2 id="批量代收交易"><a href="#批量代收交易" class="headerlink" title="批量代收交易"></a>批量代收交易</h2><p>商户按银联指定文件格式生成批量代收文件，上传文件发起交易，收单机构检查文件和委托关系后上送银联交易。银联经拆包、检查后，转发到发卡机构，发卡机构进行授权应答。银联对T日截止时间前收到的批量代收文件T日完成，在截止时间后收到的批量代收文件T+1日完成。完成处理后，银联向收单机构提供完整的回盘文件。</p>
+<h1 id="清结算与计费"><a href="#清结算与计费" class="headerlink" title="清结算与计费"></a>清结算与计费</h1><p>一般T+1日进行清算，银联将每日发卡机构当日应答成功的交易纳入清算，包括实时代收交易、批量代收交易、代收撤销交易和退货交易。</p>
+<h1 id="名词"><a href="#名词" class="headerlink" title="名词"></a>名词</h1><ul>
+<li><p>代收业务：持卡人与商户签订业务委托协议，许可商户根据协议约定，想持卡人指定账户请求并完成指定款项支付的业务。</p>
+</li>
+<li><p>代收业务委托：商户与持卡人之间达成的，关于许可指定商户发起代收交易、完成指定款项收付的具体约定。</p>
+</li>
+<li><p>代收交易：商户开展代收业务时，通过银行卡受理终端，在持卡人未出示卡片、未提供交易密码的情况下，就应付款项向发卡机构请求并获得支付的交易。根据交易提交方式或交易应答周期不同，代收交易可分为实时代收交易和批量代收交易。</p>
+</li>
+<li><p>实时代收交易：商户逐笔发起代收交易兵器发卡机构即时返回交易应答的代收交易。</p>
+</li>
+<li><p>批量代收交易：商户通过文件方式向收单机构批量提交的代收交易。</p>
+</li>
+<li><p>辅助认证信息：收单机构向发卡机构提交的用于验证持卡人账户信息与身份信息一致性的信息，包括但不限于：持卡人手机号码、姓名、身份证件号码（后6位）等。</p>
+</li>
+<li><p>MCC码：商户类别码，由收单机构为签约商户设置，用于标明银联卡交易环境、所在商户的主营业务范围和行业归属。商户编码格式（商户号格式），银行卡收单管理办法规定，商户号为15位：机构代码（3位）+地区代码（4位）+商户类型（4位）+商户顺序号（4位）。</p>
+</li>
+<li><p>清结算：清分和结算。</p>
+</li>
+<li><p>清分：结清银行间资金账户往来债权债务关系最终结果的一种过程。轧差账目，A行要付给B行2亿，B行要付给A行1亿，二者相抵则A行付给B行1亿。银联、VISA、Mastercard这些清算企业做的就是清分的工作。</p>
+</li>
+<li><p>结算：清偿商务活动中债权债务的最终结果，根据账目核对结果将钱如数付给B行，可以是现钞也可以是电子货币。</p>
+</li>
+</ul>
+<blockquote>
+<p>参考文档：<a href="http://doc.mbalib.com/view/e54cb251482ae283d2c121e02ba1a4c9.html" target="_blank" rel="noopener">银联卡代收业务规则</a></p>
+</blockquote>
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/支付/" rel="tag"># 支付</a>
+          
+            <a href="/tags/总结/" rel="tag"># 总结</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2017/06/29/【网站收藏】技术框架网站收藏/" rel="next" title="【网站收藏】技术框架网站收藏">
+                <i class="fa fa-chevron-left"></i> 【网站收藏】技术框架网站收藏
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2017/10/10/【网站收藏】Android开发资源收藏/" rel="prev" title="【网站收藏】移动app开发资源收藏">
+                【网站收藏】移动app开发资源收藏 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+  </div>
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="http://portrait1.sinaimg.cn/2345835112/blog/180"
+               alt="Wang Xin" />
+          <p class="site-author-name" itemprop="name">Wang Xin</p>
+           
+              <p class="site-description motion-element" itemprop="description">Imagination will take you everywhere.</p>
+          
+        </div>
+        <nav class="site-state motion-element">
+
+          
+            <div class="site-state-item site-state-posts">
+              <a href="/archives/">
+                <span class="site-state-item-count">5</span>
+                <span class="site-state-item-name">日志</span>
+              </a>
+            </div>
+          
+
+          
+            
+            
+            <div class="site-state-item site-state-categories">
+              <a href="/categories/index.html">
+                <span class="site-state-item-count">3</span>
+                <span class="site-state-item-name">分类</span>
+              </a>
+            </div>
+          
+
+          
+            
+            
+            <div class="site-state-item site-state-tags">
+              <a href="/tags/index.html">
+                <span class="site-state-item-count">7</span>
+                <span class="site-state-item-name">标签</span>
+              </a>
+            </div>
+          
+
+        </nav>
+
+        
+
+        <div class="links-of-author motion-element">
+          
+            
+              <span class="links-of-author-item">
+                <a href="https://github.com/ionething" target="_blank" title="GitHub">
+                  
+                    <i class="fa fa-fw fa-github"></i>
+                  
+                  GitHub
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="mailto:wangxin2617@163.com" target="_blank" title="Mail">
+                  
+                    <i class="fa fa-fw fa-envelope"></i>
+                  
+                  Mail
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="http://weibo.com/ionething" target="_blank" title="新浪微博">
+                  
+                    <i class="fa fa-fw fa-weibo"></i>
+                  
+                  新浪微博
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="http://blog.sina.com.cn/u/2345835112" target="_blank" title="新浪博客">
+                  
+                    <i class="fa fa-fw fa-weibo"></i>
+                  
+                  新浪博客
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="http://www.cnblogs.com/xdwy" target="_blank" title="博客园">
+                  
+                    <i class="fa fa-fw fa-pencil-square-o"></i>
+                  
+                  博客园
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="http://www.jianshu.com/users/910c19cbfe9d" target="_blank" title="简书">
+                  
+                    <i class="fa fa-fw fa-book"></i>
+                  
+                  简书
+                </a>
+              </span>
+            
+          
+        </div>
+
+        
+        
+
+        
+        
+
+        
+
+
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#概述"><span class="nav-number">1.</span> <span class="nav-text">概述</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#支付场景"><span class="nav-number">1.1.</span> <span class="nav-text">支付场景</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#代收业务概述"><span class="nav-number">1.2.</span> <span class="nav-text">代收业务概述</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#代收业务流程"><span class="nav-number">1.3.</span> <span class="nav-text">代收业务流程</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#基本要求"><span class="nav-number">2.</span> <span class="nav-text">基本要求</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#发卡机构"><span class="nav-number">2.1.</span> <span class="nav-text">发卡机构</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#持卡人服务"><span class="nav-number">2.1.1.</span> <span class="nav-text">持卡人服务</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#业务委托管理"><span class="nav-number">2.1.2.</span> <span class="nav-text">业务委托管理</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#账户验证"><span class="nav-number">2.1.3.</span> <span class="nav-text">账户验证</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#交易识别和应答"><span class="nav-number">2.1.4.</span> <span class="nav-text">交易识别和应答</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#交易性质"><span class="nav-number">2.1.5.</span> <span class="nav-text">交易性质</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#收单机构"><span class="nav-number">2.2.</span> <span class="nav-text">收单机构</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#终端管理"><span class="nav-number">2.2.1.</span> <span class="nav-text">终端管理</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#代收业务委托管理"><span class="nav-number">2.2.2.</span> <span class="nav-text">代收业务委托管理</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#代收业务委托形式"><span class="nav-number">2.2.3.</span> <span class="nav-text">代收业务委托形式</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#形式一"><span class="nav-number">2.2.3.1.</span> <span class="nav-text">形式一</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#形式二"><span class="nav-number">2.2.3.2.</span> <span class="nav-text">形式二</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#收单机构的交易要求"><span class="nav-number">2.2.4.</span> <span class="nav-text">收单机构的交易要求</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#风险管理"><span class="nav-number">2.3.</span> <span class="nav-text">风险管理</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#交易处理"><span class="nav-number">3.</span> <span class="nav-text">交易处理</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#实时代收交易"><span class="nav-number">3.1.</span> <span class="nav-text">实时代收交易</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#批量代收交易"><span class="nav-number">3.2.</span> <span class="nav-text">批量代收交易</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#清结算与计费"><span class="nav-number">4.</span> <span class="nav-text">清结算与计费</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#名词"><span class="nav-number">5.</span> <span class="nav-text">名词</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  &copy;  2017 - 
+  <span itemprop="copyrightYear">2018</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Wang Xin</span>
+</div>
+
+
+<div class="powered-by">
+  由 <a class="theme-link" href="https://hexo.io">Hexo</a> 强力驱动
+</div>
+
+<div class="theme-info">
+  主题 -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Pisces
+  </a>
+</div>
+
+
+        
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+  
+  <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+  
+  <script type="text/javascript" src="/lib/canvas-nest/canvas-nest.min.js"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.1"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.1"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.1"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.1"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.1"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.1"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.1"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
