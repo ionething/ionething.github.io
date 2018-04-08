@@ -16,7 +16,7 @@ tags:
     ```
     hexo new <title>
     ```
-1. Front-matter是文件上方```---```分割的区域，可以指定以下变量
+1. Front-matter是文件上方---分割的区域，可以指定以下变量
     - layout：布局，可以为false，这样文章就不会被处理
 
 ### 生成与部署
