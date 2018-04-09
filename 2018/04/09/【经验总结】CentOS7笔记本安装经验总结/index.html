@@ -77,7 +77,7 @@
 <link href="/css/main.css?v=5.1.1" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="hexo,markdown," />
+  <meta name="keywords" content="Linux," />
 
 
 
@@ -93,18 +93,18 @@
 
 
 
-<meta name="description" content="很久没有写过博客了，把仓库clone下来之后都遗忘了如何操作。找到文档仔细研读之后，才依稀记起一些命令。现决定先记录下来，等以后忘记的时候只需本文查阅即可。  Hexo常用写作 创建一篇新的文章  1hexo new &amp;lt;title&amp;gt;  Front-matter是文件上方—分割的区域，可以指定以下变量  layout：布局，可以为false，这样文章就不会被处理    生成与部署 生成">
-<meta name="keywords" content="hexo,markdown">
+<meta name="description" content="有一台闲置不用的笔记本，配置了奔腾的处理器，性能非常的差。处于闲置状态的这台笔记本自然被我拿来用做开发服务器用了。这台电脑之前就安装了CentOS7，已经很久了，今天突发奇想重新装了一遍，发现很多设置都记不起来了。这里记录一下以免以后忘记。  安装U盘镜像一开始用软碟通制作U盘镜像，跑了几次都有问题，网上搜了很多教程，都没有彻底解决安装不了的问题。后面发现，使用软碟通制作镜像的时候，U盘的模式一">
+<meta name="keywords" content="Linux">
 <meta property="og:type" content="article">
-<meta property="og:title" content="【备忘笔记】使用hexo写作的命令与markdown语法的备忘">
-<meta property="og:url" content="http://ionething.github.io/2018/04/08/【备忘笔记】使用hexo写作的命令与markdown语法的备忘/index.html">
+<meta property="og:title" content="【经验总结】CentOS7笔记本安装经验总结">
+<meta property="og:url" content="http://ionething.github.io/2018/04/09/【经验总结】CentOS7笔记本安装经验总结/index.html">
 <meta property="og:site_name" content="Wang Xin&#39;s Blog">
-<meta property="og:description" content="很久没有写过博客了，把仓库clone下来之后都遗忘了如何操作。找到文档仔细研读之后，才依稀记起一些命令。现决定先记录下来，等以后忘记的时候只需本文查阅即可。  Hexo常用写作 创建一篇新的文章  1hexo new &amp;lt;title&amp;gt;  Front-matter是文件上方—分割的区域，可以指定以下变量  layout：布局，可以为false，这样文章就不会被处理    生成与部署 生成">
+<meta property="og:description" content="有一台闲置不用的笔记本，配置了奔腾的处理器，性能非常的差。处于闲置状态的这台笔记本自然被我拿来用做开发服务器用了。这台电脑之前就安装了CentOS7，已经很久了，今天突发奇想重新装了一遍，发现很多设置都记不起来了。这里记录一下以免以后忘记。  安装U盘镜像一开始用软碟通制作U盘镜像，跑了几次都有问题，网上搜了很多教程，都没有彻底解决安装不了的问题。后面发现，使用软碟通制作镜像的时候，U盘的模式一">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-04-08T15:11:39.123Z">
+<meta property="og:updated_time" content="2018-04-09T14:32:21.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="【备忘笔记】使用hexo写作的命令与markdown语法的备忘">
-<meta name="twitter:description" content="很久没有写过博客了，把仓库clone下来之后都遗忘了如何操作。找到文档仔细研读之后，才依稀记起一些命令。现决定先记录下来，等以后忘记的时候只需本文查阅即可。  Hexo常用写作 创建一篇新的文章  1hexo new &amp;lt;title&amp;gt;  Front-matter是文件上方—分割的区域，可以指定以下变量  layout：布局，可以为false，这样文章就不会被处理    生成与部署 生成">
+<meta name="twitter:title" content="【经验总结】CentOS7笔记本安装经验总结">
+<meta name="twitter:description" content="有一台闲置不用的笔记本，配置了奔腾的处理器，性能非常的差。处于闲置状态的这台笔记本自然被我拿来用做开发服务器用了。这台电脑之前就安装了CentOS7，已经很久了，今天突发奇想重新装了一遍，发现很多设置都记不起来了。这里记录一下以免以后忘记。  安装U盘镜像一开始用软碟通制作U盘镜像，跑了几次都有问题，网上搜了很多教程，都没有彻底解决安装不了的问题。后面发现，使用软碟通制作镜像的时候，U盘的模式一">
 
 
 
@@ -132,13 +132,13 @@
 
 
 
-  <link rel="canonical" href="http://ionething.github.io/2018/04/08/【备忘笔记】使用hexo写作的命令与markdown语法的备忘/"/>
+  <link rel="canonical" href="http://ionething.github.io/2018/04/09/【经验总结】CentOS7笔记本安装经验总结/"/>
 
 
 
 
 
-  <title>【备忘笔记】使用hexo写作的命令与markdown语法的备忘 | Wang Xin's Blog</title>
+  <title>【经验总结】CentOS7笔记本安装经验总结 | Wang Xin's Blog</title>
   
 
 
@@ -283,7 +283,7 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="http://ionething.github.io/2018/04/08/【备忘笔记】使用hexo写作的命令与markdown语法的备忘/">
+    <link itemprop="mainEntityOfPage" href="http://ionething.github.io/2018/04/09/【经验总结】CentOS7笔记本安装经验总结/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Wang Xin">
@@ -300,7 +300,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">【备忘笔记】使用hexo写作的命令与markdown语法的备忘</h1>
+          <h1 class="post-title" itemprop="name headline">【经验总结】CentOS7笔记本安装经验总结</h1>
         
 
         <div class="post-meta">
@@ -312,8 +312,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-04-08T22:11:34+08:00">
-                2018-04-08
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-04-09T21:30:04+08:00">
+                2018-04-09
               </time>
             
 
@@ -335,8 +335,8 @@
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/工具/" itemprop="url" rel="index">
-                    <span itemprop="name">工具</span>
+                  <a href="/categories/操作系统/" itemprop="url" rel="index">
+                    <span itemprop="name">操作系统</span>
                   </a>
                 </span>
 
@@ -370,47 +370,44 @@
 
       
         <blockquote>
-<p>很久没有写过博客了，把仓库clone下来之后都遗忘了如何操作。找到文档仔细研读之后，才依稀记起一些命令。现决定先记录下来，等以后忘记的时候只需本文查阅即可。</p>
+<p>有一台闲置不用的笔记本，配置了奔腾的处理器，性能非常的差。处于闲置状态的这台笔记本自然被我拿来用做开发服务器用了。这台电脑之前就安装了CentOS7，已经很久了，今天突发奇想重新装了一遍，发现很多设置都记不起来了。这里记录一下以免以后忘记。</p>
 </blockquote>
-<h1 id="Hexo常用"><a href="#Hexo常用" class="headerlink" title="Hexo常用"></a>Hexo常用</h1><h3 id="写作"><a href="#写作" class="headerlink" title="写作"></a>写作</h3><ol>
-<li><p>创建一篇新的文章</p>
- <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo new &lt;title&gt;</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>Front-matter是文件上方—分割的区域，可以指定以下变量</p>
+<h1 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h1><h3 id="U盘镜像"><a href="#U盘镜像" class="headerlink" title="U盘镜像"></a>U盘镜像</h3><p>一开始用软碟通制作U盘镜像，跑了几次都有问题，网上搜了很多教程，都没有彻底解决安装不了的问题。后面发现，使用软碟通制作镜像的时候，U盘的模式一定要选正确。写入方式一定要选<strong>USB-HDD+ v2</strong>，这是非常关键的。</p>
+<p>除此之外，还有其他的制作工具：</p>
 <ul>
-<li>layout：布局，可以为false，这样文章就不会被处理</li>
+<li>Fedora Media Writer</li>
+<li>Universal USB Installer</li>
+</ul>
+<h3 id="安装选项"><a href="#安装选项" class="headerlink" title="安装选项"></a>安装选项</h3><p>只选最小安装，没有为什么。</p>
+<h1 id="首次启动"><a href="#首次启动" class="headerlink" title="首次启动"></a>首次启动</h1><h3 id="连接网络"><a href="#连接网络" class="headerlink" title="连接网络"></a>连接网络</h3><p>如果安装的时候没有联网的话，开机是不会联网的，所以就对着黑色屏幕发呆咯，哈哈。所以，掌握ip命令是最佳解决途径。具体解决方案网上很多，就详细写了。</p>
+<ol>
+<li><p>检查网口</p>
+ <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ip link</span><br></pre></td></tr></table></figure>
+<p> 一眼看出wlp3是无线网卡，记下mac地址有用。</p>
+</li>
+<li><p>激活网口</p>
+ <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ip link set wlp3 up</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>修改配置<br> 很多教程说用iw命令，实际上最小安装后是没有这个命令的，所以还是修改配置文件吧。</p>
+ <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"># 网络配置文件目录</span><br><span class="line">cd /etc/sysconfig/network-scripts/</span><br><span class="line"># 新建文件</span><br><span class="line">vi ifcfg-wifi</span><br></pre></td></tr></table></figure>
+<p> // TODO</p>
+</li>
+<li>其他<ul>
+<li>修改主机名：vi /etc/hostname</li>
+<li>修改host：vi /etc/hosts</li>
 </ul>
 </li>
 </ol>
-<h3 id="生成与部署"><a href="#生成与部署" class="headerlink" title="生成与部署"></a>生成与部署</h3><ol>
-<li><p>生成文件</p>
- <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo g</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>部署</p>
- <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo d</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>完成后部署</p>
- <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo g -d</span><br></pre></td></tr></table></figure>
-<p> 或者</p>
- <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo d -g</span><br></pre></td></tr></table></figure>
-</li>
-</ol>
-<h1 id="Markdown语法"><a href="#Markdown语法" class="headerlink" title="Markdown语法"></a>Markdown语法</h1><pre>
-# 标题
-** 加粗
-``` ``` 代码
-[百度1](http://www.baidu.com/"百度一下"){:target="_blank"} 超链接
-> 引用
-</pre>
-
-<h1 id="参考文档"><a href="#参考文档" class="headerlink" title="参考文档"></a>参考文档</h1><ul>
-<li><a href="https://hexo.io/zh-cn/docs/" target="_blank" rel="noopener">Hexo中文文档</a></li>
-<li><a href="http://theme-next.iissnan.com/getting-started.html" target="_blank" rel="noopener">Next中文文档</a></li>
-<li><a href="https://github.com/ruanyf/document-style-guide" target="_blank" rel="noopener">阮一峰老师的写作规范</a></li>
-<li><a href="http://wowubuntu.com/markdown/basic.html" target="_blank" rel="noopener">Markdown: Basics</a></li>
-<li><a href="http://wowubuntu.com/markdown/index.html" target="_blank" rel="noopener">Markdown语法说明</a></li>
-<li><a href="https://ouweiya.gitbooks.io/markdown/" target="_blank" rel="noopener">Markdown常用笔记语法</a></li>
-</ul>
+<h3 id="自动连接Wifi"><a href="#自动连接Wifi" class="headerlink" title="自动连接Wifi"></a>自动连接Wifi</h3><p>安装软件是关键。<br>    <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">yum install NetworkManager-wifi</span><br></pre></td></tr></table></figure></p>
+<h1 id="软件安装"><a href="#软件安装" class="headerlink" title="软件安装"></a>软件安装</h1><h3 id="网络工具"><a href="#网络工具" class="headerlink" title="网络工具"></a>网络工具</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">yum install net-tools</span><br></pre></td></tr></table></figure>
+<p>提供了ifconfig，这是最小安装没有自带的。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">service network restart</span><br></pre></td></tr></table></figure>
+<p>重启网络。</p>
+<h1 id="软件设置"><a href="#软件设置" class="headerlink" title="软件设置"></a>软件设置</h1><h3 id="防火墙"><a href="#防火墙" class="headerlink" title="防火墙"></a>防火墙</h3><p>自带防火墙永久开启某一端口<br>    <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">firewall-cmd --zone=public --permanent --add-port=3306/tcp</span><br><span class="line">firewall-cmd --reload</span><br></pre></td></tr></table></figure></p>
+<h3 id="生产秘钥"><a href="#生产秘钥" class="headerlink" title="生产秘钥"></a>生产秘钥</h3><p>用ssh必备秘钥<br>    <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh-keygen -t rsa</span><br></pre></td></tr></table></figure></p>
+<h1 id="笔记本设置"><a href="#笔记本设置" class="headerlink" title="笔记本设置"></a>笔记本设置</h1><h3 id="合盖不休眠"><a href="#合盖不休眠" class="headerlink" title="合盖不休眠"></a>合盖不休眠</h3><p>systemd处理电源相关的事件，所以通过修改<br>    <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">/etc/systemd/logind.conf</span><br></pre></td></tr></table></figure></p>
+<p>里面的配置即可。里面的key有HandlePowerKey（处理电源键）、HandleSleepKey（处理挂起按键）、HandleHibernateKey（处理休眠按键）、HandleLidSwitch（处理盖子开合），显而易见就是要更改HandleLidSwitch的值。而值可以是ignore、poweroff、reboot、halt、suspend、hibernate、hybrid-sleep、lock、kexec。所以，修改以下配置：<br>    <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">HandleLidSwitch=lock</span><br></pre></td></tr></table></figure></p>
+<p>修改完毕后，重启生效或者运行：<br>    <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo systemctl restart systemd-logind</span><br></pre></td></tr></table></figure></p>
 
       
     </div>
@@ -440,9 +437,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/hexo/" rel="tag"># hexo</a>
-          
-            <a href="/tags/markdown/" rel="tag"># markdown</a>
+            <a href="/tags/Linux/" rel="tag"># Linux</a>
           
         </div>
       
@@ -455,8 +450,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2017/10/10/【网站收藏】Android开发资源收藏/" rel="next" title="【网站收藏】移动app开发资源收藏">
-                <i class="fa fa-chevron-left"></i> 【网站收藏】移动app开发资源收藏
+              <a href="/2018/04/08/【备忘笔记】使用hexo写作的命令与markdown语法的备忘/" rel="next" title="【备忘笔记】使用hexo写作的命令与markdown语法的备忘">
+                <i class="fa fa-chevron-left"></i> 【备忘笔记】使用hexo写作的命令与markdown语法的备忘
               </a>
             
           </div>
@@ -465,8 +460,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2018/04/09/【经验总结】CentOS7笔记本安装经验总结/" rel="prev" title="【经验总结】CentOS7笔记本安装经验总结">
-                【经验总结】CentOS7笔记本安装经验总结 <i class="fa fa-chevron-right"></i>
+              <a href="/2018/04/09/【经验总结】Ubuntu16笔记本安装经验总结/" rel="prev" title="【经验总结】Ubuntu16笔记本安装经验总结">
+                【经验总结】Ubuntu16笔记本安装经验总结 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -652,7 +647,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Hexo常用"><span class="nav-number">1.</span> <span class="nav-text">Hexo常用</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#写作"><span class="nav-number">1.0.1.</span> <span class="nav-text">写作</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#生成与部署"><span class="nav-number">1.0.2.</span> <span class="nav-text">生成与部署</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Markdown语法"><span class="nav-number">2.</span> <span class="nav-text">Markdown语法</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#参考文档"><span class="nav-number">3.</span> <span class="nav-text">参考文档</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#安装"><span class="nav-number">1.</span> <span class="nav-text">安装</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#U盘镜像"><span class="nav-number">1.0.1.</span> <span class="nav-text">U盘镜像</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#安装选项"><span class="nav-number">1.0.2.</span> <span class="nav-text">安装选项</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#首次启动"><span class="nav-number">2.</span> <span class="nav-text">首次启动</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#连接网络"><span class="nav-number">2.0.1.</span> <span class="nav-text">连接网络</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#自动连接Wifi"><span class="nav-number">2.0.2.</span> <span class="nav-text">自动连接Wifi</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#软件安装"><span class="nav-number">3.</span> <span class="nav-text">软件安装</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#网络工具"><span class="nav-number">3.0.1.</span> <span class="nav-text">网络工具</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#软件设置"><span class="nav-number">4.</span> <span class="nav-text">软件设置</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#防火墙"><span class="nav-number">4.0.1.</span> <span class="nav-text">防火墙</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#生产秘钥"><span class="nav-number">4.0.2.</span> <span class="nav-text">生产秘钥</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#笔记本设置"><span class="nav-number">5.</span> <span class="nav-text">笔记本设置</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#合盖不休眠"><span class="nav-number">5.0.1.</span> <span class="nav-text">合盖不休眠</span></a></li></ol></li></ol></li></ol></div>
             
 
           </div>
